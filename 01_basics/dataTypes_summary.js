@@ -18,7 +18,7 @@ const bigNumber= 3790480238432009832498n //bigint
 // Most of the primitive data types return object like null ,array and return type of Function is ----> OBJECT FUNCTION
 
 const heros=['ironMan', 'thor', ' captainAmerica'];
-console.log(typeof heros);  //object
+// console.log(typeof heros);  //object
 
 const myObj ={
     name:'ali',
@@ -28,7 +28,40 @@ const myObj ={
 const myFunction=function(){
     console.log('Hello world');
 }
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Premitive), Heap(Non- Premitive)
+let myYoutubename='aliabbasdotcom';
+let anothername=myYoutubename;
+anothername='chaiaurcode';
+
+console.log(myYoutubename); //Answer will be aliabbasdotcom 
+console.log(anothername); //chaiaurcode
+//REASON----> As STRING is a  premitive datatype so it will go into stack and everything in stack is passed as a copy, Nothing will happen to the original variable if any changes made to the copy.
+
+
+let userOne={
+    email:'user@google.com',
+    easypaisa:'user@easypaisa',
+}
+
+let userTwo=userOne;
+userTwo.email='aliabbaschadhar.ai';
+
+console.log(userOne.email);
+
+
+
+
+
+
+
+
+
+
 
 
 
